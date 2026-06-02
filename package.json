@@ -1,0 +1,18 @@
+{
+  "name": "visualizer",
+  "version": "1.0.0",
+  "description": "Интерактивный визуализатор сортировки на JavaScript, демонстрирующий работу алгоритма сортировки и разные подходы к выполнению тяжелых вычислений в браузере: синхронно, через `requestAnimationFrame` и в `Web Worker`.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
+}

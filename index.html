@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Визуальное отображение сортировки</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./spinner.css" />
+  </head>
+  <body>
+    <h1>Визуальное отображение сортировки</h1>
+    <div class="controls">
+      <button id="resetBtn">Сбросить массив</button>
+      <button id="syncBtn">Выполнить сортировку синхронно</button>
+      <button id="rafBtn">Сортировать rAF</button>
+      <button id="workerBtn">Сортировать через worker</button>
+
+    </div>
+    <!-- Контейнер для столбиков визуализации -->
+    <div id="container"></div>
+    <div id="status">Готово.Нажмите сбросить массив для начала.</div>
+
+    <!-- Спиннер -->
+    <div class="spinner-container">
+      <div id="spinner"></div>
+      <span>Индикатор отзывчивости (должен вращаться)</span>
+    </div>
+    <!-- Статистика -->
+    <div id="times">
+      <div class="time-entry" id="syncTime"></div>
+      <div class="time-entry" id="rafTime"></div>
+      <div class="time-entry" id="workerTime"></div>
+
+
+    </div>
+    <script type="module" src="./js/app.js"></script>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 Майорова Наиля. Sort Visualizer.</p>
+    </footer>
+  </body>
+</html>

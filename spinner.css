@@ -1,0 +1,33 @@
+.spinner-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(227, 245, 161, 0.533);
+    border-radius: 8px;
+    border: 1px solid #8cb9f4;
+ 
+
+
+}
+#spinner {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #e0e0e0;
+    border-top-color:steelblue ;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+.spinner-container span {
+    color: #777;
+    font-size: 14px;
+
+}
+

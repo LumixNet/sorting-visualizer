@@ -1,0 +1,60 @@
+.controls {
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button:focus {
+  border-color: green;
+}
+
+#container{
+    height: 320px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fafafa;
+
+/* Чтобы столбики показывались */
+display: flex;
+align-items: flex-end;
+}
+
+/* Сам столбец */
+
+.bar {
+    display: inline-flex;
+    width: 8px;
+    margin-right: 1px;
+    background-color: steelblue;
+    transition: height 0.05s;
+}
+#status {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+}
+#times {
+    margin-top: 10px;
+}
+
+.time-entry {
+    margin: 5px;
+    font-family: monospace;
+}
+.page-footer {
+    margin: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
