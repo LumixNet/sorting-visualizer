@@ -16,8 +16,9 @@ button:focus {
 }
 
 #container{
-    height: 320px;
+    height: 200px;
     border: 1px solid #ccc;
+
     padding: 10px;
     background-color: #fafafa;
 
