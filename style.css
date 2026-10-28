@@ -31,7 +31,8 @@ align-items: flex-end;
 
 .bar {
     display: inline-flex;
-    width: 8px;
+    flex: 1 1 0;
+    min-width: 0;
     margin-right: 1px;
     background-color: steelblue;
     transition: height 0.05s;

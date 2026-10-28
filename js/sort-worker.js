@@ -1,4 +1,4 @@
-import { arr, setArr, SIZE } from "./config.js";
+import { arr, setArr } from "./config.js";
 import { statusEl, syncTime, workerTime } from "./dom-elements.js";
 import { render } from "./rendering.js";
 import { enableButtons } from "./buttons.js";
@@ -19,7 +19,7 @@ export function sortWithWorker() {
 
     if (type === "progress") {
       render(sortedArr); // Показываем промежуточный результат пользователю
-      statusEl.textContent = `Worker: проход ${step + 1} из ${SIZE - 1}`;
+     statusEl.textContent = `Worker: проход ${step + 1} из ${arr.length - 1}`;
     } else if (type === "done") {
       // Сортировка завершена
       // Вычисляем время выполнения сортировки

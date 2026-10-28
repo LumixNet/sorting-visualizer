@@ -20,9 +20,15 @@ import "./spinner.js"; //Просто выполняем код
 
 // Генерация случайного массива чисел
 function generateArray() {
-  // Случайное число от 1 до MAX_VALUE
+  const width = window.innerWidth;
+
+  const count =
+    width <= 480 ? 40 :
+    width < 1024 ? 120 :
+    SIZE;
+
   const newArr = Array.from(
-    { length: SIZE },
+    { length: count },
     () => Math.floor(Math.random() * MAX_VALUE) + 1,
   );
   //  console.log(Math.floor(Math.random()) * MAX_VALUE +1)
